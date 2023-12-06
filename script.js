@@ -13,6 +13,11 @@ focoBt.addEventListener('click', () => {
     Otimize sua produtividade,<br>
         <strong class="app__title-strong">mergulhe no que importa.</strong>
     `
+    focoBt.classList.add("active")
+    curtoBt.classList.remove("active")
+    longoBt.classList.remove("active")
+
+
 })
 
 curtoBt.addEventListener('click', () => {
@@ -21,6 +26,11 @@ curtoBt.addEventListener('click', () => {
     titulo.innerHTML = `
             Que tal dar uma respirada? <strong class="app__title-strong">Faça uma pausa curta!</strong>
             ` 
+        curtoBt.classList.add("active")
+        focoBt.classList.remove("active")
+        longoBt.classList.remove("active")
+
+
 })
 
 
@@ -30,4 +40,9 @@ longoBt.addEventListener('click', () => {
     titulo.innerHTML = `
             Hora de voltar à superfície.<strong class="app__title-strong"> Faça uma pausa longa.</strong>
             `
+        longoBt.classList.add("active")
+        curtoBt.classList.remove("active")
+        focoBt.classList.remove("active")
+
+
 })
